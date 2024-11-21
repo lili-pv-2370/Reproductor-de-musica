@@ -1,0 +1,60 @@
+﻿<!DOCTYPE html>
+
+<html lang="en">
+<head>
+    <meta charset="utf-8"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet"
+          href="https://use.fontawesome.com/releases/v5.15.1/css/all.css"
+          integrity="sha384-vp86vTRFVJgpjF9jiIGPEEqYqlDwgyBgEF109VFjmqGmIY/Y4HV4d3Gp2irVfcrp"
+          crossorigin="anonymous"/> 
+    <link rel="stylesheet" href="css/styles.css"/>
+  
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+    
+    <title>PVLY  Reproductor de musica</title>
+</head>
+<body>
+    <header>
+        <h1> Perez Velazquez Lilia Yasmin</h1>
+    </header>
+    <div class="Container">
+        <div class="player">
+                <div class="player__controls">
+                    <div class="player__btn player__btn--small">
+                        <i class=" fa fa-arrow-left"> </i>
+                    </div><h2 class="player__title"> playing now</h2>
+                    <div class="player__btn player__btn--small">
+                        <i class=" fa fa-bars"> </i>
+                    </div>
+                </div>
+            <div id="player_album">
+
+                <img src="imagen/Portada1.jpg" alt="Portada1" id="cover"/>
+            </div>
+
+                <div id="Barra-Musica">
+                    <audio id="disc"></audio>
+                    <div id="PosiciónBM">
+                        <h2 id="title"></h2>
+                        <h3 id="artist"></h3>
+                        <div id="progress-container">
+                            <div id="progress"></div>
+                        </div>
+                        <div id="DuraciónC">
+                        <span id="timer">0:00</span>
+                        <span id="duration"></span>
+                        </div>
+                    </div>
+                    <div id="CBotones">
+                        <i id="prev" class="ID fas fa-backward"></i>
+                        <i id="play" class="BC fas fa-play"></i>
+                        <i id="next" class="ID fas fa-forward"></i>
+                    </div>
+                </div>
+        </div>
+    </div>
+  
+    <script src="scripts/java.js"></script>
+</body>
+</html>
